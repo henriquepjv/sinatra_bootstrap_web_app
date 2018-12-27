@@ -4,10 +4,7 @@ require 'uri'
 require 'pry'
 
 get '/' do
-  url = 'https://jsonplaceholder.typicode.com/todos/1'
-  uri = URI.parse(url)
-
-  Net::HTTP.get(uri)
+  erb :'/home'
 end
 
 get '/posts' do
