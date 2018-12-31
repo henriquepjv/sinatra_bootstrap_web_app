@@ -1,0 +1,7 @@
+<div class="container">
+  <h1>All Posts</h1>
+  <% @posts.each do |post| %>
+    <%= post['id'] %>
+    <a class="btn btn-primary" href="/posts/<%= post['id'] %>" role="button">Link</a>
+  <% end %>
+</div>
